@@ -1,3 +1,10 @@
+# UNDER DEVELOPMENT
+
+# Install Requirements
+```
+pip3 install -r requirements.txt
+pip3 install -r rti_python/requirements.txt
+```
 #Compile QT5 .UI files
 OSX
 ```javascript
