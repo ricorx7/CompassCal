@@ -1,10 +1,7 @@
 import sys
-
 from PyQt5 import QtGui, QtWidgets
-
 from compasscal_vm import CompassCalVM
 # import qdarkstyle
-# import images_qr
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -15,13 +12,12 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, config=None):
         QtWidgets.QMainWindow.__init__(self)
 
-        # Initialize the pages
-        self.compasscal = CompassCalVM(self)
-
         # Initialize the window
         self.main_window_init()
 
     def main_window_init(self):
+        self.compassCal = CompassCalVM(self)
+
         # Set the title of the window
         self.setWindowTitle("RoweTech Inc. - Compass Calibration")
 
